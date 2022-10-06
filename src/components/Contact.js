@@ -8,7 +8,7 @@ function Contact() {
     const [email, setEmail] = useState(null);
     const [textarea,setTextArea] = useState(null);
 
-    const handleInputChange = (e) => {
+  const handleInputChange = (e) => {
         const {id , value} = e.target;
         if(id === "firstName"){
             setFirstName(value);
