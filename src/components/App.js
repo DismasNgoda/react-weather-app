@@ -49,7 +49,7 @@ function App() {
         <div>
           <div className="location-box">
             <div className="location">
-              {weather.name}
+              {weather.name } 
               {weather.sys.country}
             </div>
             <div className="date">

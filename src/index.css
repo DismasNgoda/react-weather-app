@@ -11,7 +11,6 @@ body {
 .app {
   background-image: url('./assets/images/warm-bg.avif');
   background-size: cover;
-  background-position: bottom;
   transition: 0.4 ease;
 }
 
@@ -21,7 +20,6 @@ body {
 
 main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding: 25px;
 }
 
@@ -30,19 +28,15 @@ main {
   margin: 0 0 75px;
 }
 
+/* Search area, where the user inputs the search terms */
 .search-box .search-bar {
   display: block;
   width: 100%;
   padding: 15px;
 
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
+  border-radius: 16px 16px 16px 16px;
+  margin-top: 25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
   
@@ -61,22 +55,24 @@ main {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
 }
 
+/* This is the area containing the chosen location and current date (Denver, Nairobi, Rio, Helsinki et al.) */
 .location-box .date {
   color: #FFF;
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
 }
 
 .weather-box {
   text-align: center;
 }
 
+/* Section displaying the weather/ degrees of the highlighted area */
 .weather-box .temp {
   position: relative;
   display: inline-block;
@@ -95,6 +91,7 @@ main {
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Section Displaying the weather status (clouds, rain, sunny) */
 .weather-box .weather {
   color: #FFF;
   font-size: 48px;
