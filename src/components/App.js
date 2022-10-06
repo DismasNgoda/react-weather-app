@@ -20,7 +20,7 @@ function App() {
     }
   }
 
-  const dateBuilder = (d) => {
+  function myDate(d){
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -49,7 +49,7 @@ function App() {
         <div>
           <div className="location-box">
             <div className="location">{weather.name}, {weather.sys.country}</div>
-            <div className="date">{dateBuilder(new Date())}</div>
+            <div className="date">{myDate(new Date())}</div>
           </div>
           <div className="weather-box">
             <div className="temp">
