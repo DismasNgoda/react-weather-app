@@ -8,16 +8,20 @@ import Blog from './Blog';
 
 function App() {
   return (
+    
     <div className='App'>
+      
       <NavBar />
+      
       <Search />
       <Routes>
-        <Route path="/contact" element={ <Contact/> } />
+        <Route path="/contact" exact element={ <Contact/> } />
         <Route path="/about" element={ <About/> } />
         <Route path="/blog" element={ <Blog/> } />
-      </Routes>
       
+        </Routes>
     </div>
+   
   )
 }
 
