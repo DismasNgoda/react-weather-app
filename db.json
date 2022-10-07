@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+        "id": 1,
+        "email": "dismasngoda@gmail.com",
+        "message": "Great work"
+      },
+      {
+        "id": 2,
+        "title": "dismas.ngoda@student.moringaschool.co",
+        "image": "Nice content"
+      }
+  ]
+}
