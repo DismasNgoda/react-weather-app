@@ -32,3 +32,10 @@ body{
 .footer{
   text-align: center;
 }
+.nav-bar-elements{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}

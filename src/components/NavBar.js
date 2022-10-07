@@ -1,19 +1,22 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import '../App.css';
+// import {
+//     Nav,
+//     NavLink,
+//     Bars,
+//     NavMenu,
+//     NavBtn,
+//     NavBtnLink,
+//   } from './NavbarElements';
 
 function NavBar() {
   return (
-    <div>
-        <ul>
-            <li>
-                <Link to='/contact'>Contact Us</Link>
-            </li>
-            <li>
-                <Link to='/contact'>About</Link>
-            </li>
-            <li>
-                <Link to='/contact'>Blog</Link>
-            </li>
+    <div className='nav-bar'>
+        <ul className='nav-bar-elements'>
+        <Link to='/contact'><li>Contact Us</li></Link>
+        <Link to='/about'> <li>About</li></Link>
+        <Link to='/blog'><li>Blog</li></Link>
         </ul>
     </div>
   )
