@@ -1,14 +1,16 @@
 import React from 'react';
 import Search from './Search';
 import Contact from './Contact';
-import { BrowserRouter, Routes, Route, Links } from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
+import NavBar from './NavBar';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
+      <NavBar />
       <Search />
       <Routes>
-        <Route path='/contact' element={<Contact />}/>
+        <Route path="/contact" element={ <Contact/> } />
       </Routes>
       
     </div>

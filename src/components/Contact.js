@@ -1,4 +1,5 @@
-import React, {useState,setState} from 'react';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'
 
 function Contact() {
@@ -28,8 +29,9 @@ function Contact() {
     const handleSubmit  = () => {
         console.log(firstName,lastName,email,textarea);
     }
-
+<Link to="/"> Contact</Link>
     return(
+      // <Link to="/"> Contact</Link>
         <div className="form">
             <div className="form-body">
                 <div className="username">
