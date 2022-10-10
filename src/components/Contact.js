@@ -9,7 +9,7 @@ function Contact() {
 		message: ""
 	});
     const addRecord = (data) => {
-		userData([...userData, data]);
+		setUserData([...userData, data]);
 	};
 	const subscribe = async (event) => {
 		event.preventDefault();
